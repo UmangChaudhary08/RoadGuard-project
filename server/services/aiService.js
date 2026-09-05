@@ -111,7 +111,7 @@ export async function detectPotholes(fileBuffer, originalName = "road.jpg", mime
 
     if (!response.ok) {
       // If the Python server explicitly reported missing model weights (503)
-      if (response.status === 503 || result.modelLoaded === False) {
+      if (response.status === 503 || result.modelLoaded === false) {
         throw new Error(result.error || "Trained YOLO model weights missing from 'ml/models/best.pt'.");
       }
       throw new Error(`YOLO service error (HTTP ${response.status}): ${result.error || "Unknown error"}`);
