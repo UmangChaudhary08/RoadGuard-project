@@ -1,0 +1,6 @@
+path: C:/Users/umang/OneDrive/Desktop/Codebuild- Hackathon/pothole_yolo
+train: images/train
+val: images/val
+
+names:
+  0: pothole

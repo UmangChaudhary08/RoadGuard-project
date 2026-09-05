@@ -1,0 +1,27 @@
+{
+  "name": "roadguard",
+  "version": "1.0.0",
+  "description": "ROADGUARD — AI-Based Pothole Detection & Real-Time Warning System",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start": "cd server && npm start",
+    "build": "cd client && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "pothole-detection",
+    "ai",
+    "computer-vision",
+    "road-safety",
+    "smart-city",
+    "yolo"
+  ],
+  "author": "ROADGUARD Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
